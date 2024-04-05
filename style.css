@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 /* FONTS */
@@ -28,18 +29,15 @@ body{
 /* MOBILE SCREEN */
 
 .mobile-wrap{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
+    position: relative;
 }
 
 .mobile-screen{
     background-color: #fff;
-    width: 375px;
-    height: 812px;
-    border-radius: 10px;
     padding: 15px 12px 0 12px;
+    width: 100vw;
+    height: 100vh;
     cursor: pointer;
 }
 
@@ -48,8 +46,8 @@ body{
 } */
 
 h1{
-    font-size: 121px;
-    line-height: 90px;
+    font-size: 30.3vw;
+    line-height: 24vw;
     letter-spacing: -4px;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -69,26 +67,27 @@ h1{
 
 /* BREAKPOINTS */
 
-@media (max-width: 420px){
+@media (min-width: 420px){
 
-    /* body{
-        background: red;
+    /* header{
+        background-color: green;
     } */
 
     .mobile-wrap{
-        display: inline;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .mobile-screen{
-        width: unset;
-        height: 100vh;
-        border-radius: 0;
+        width: 375px;
+        height: 812px;
+        border-radius: 10px;
     }
 
     h1{
-        font-size:30.3vw;
-        line-height: 0.75;
-        letter-spacing: -4px;
+        font-size: 113px;
+        line-height: 90px;
     }
 
 
