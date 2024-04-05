@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* FONTS */
+
+.inter-tight-header {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+
+
+
+/* BODY */
+
+body{
+    background-color: #000;
+}
+
+
+
+
+/* MOBILE SCREEN */
+
+.mobile-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.mobile-screen{
+    background-color: #fff;
+    width: 375px;
+    height: 812px;
+    border-radius: 10px;
+    padding: 15px 12px 0 12px;
+    cursor: pointer;
+}
+
+/* header{
+    background-color: red;
+} */
+
+h1{
+    font-size: 121px;
+    line-height: 90px;
+    letter-spacing: -4px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+
+
+
+
+
+
+/* BREAKPOINTS */
+
+@media (max-width: 420px){
+
+    /* body{
+        background: red;
+    } */
+
+    .mobile-wrap{
+        display: inline;
+    }
+
+    .mobile-screen{
+        width: unset;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    h1{
+        font-size:30.3vw;
+        line-height: 0.75;
+        letter-spacing: -4px;
+    }
+
+
+
+
+
+}
